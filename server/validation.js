@@ -1,6 +1,4 @@
-const userNameRegExp = require('./regExp');
-const emailRegExp = require('./regExp');
-const passwordRegExp = require('./regExp');
+const { userNameRegExp, emailRegExp, passwordRegExp } = require('./regExp');
 
 class Validator {
     dataValidation(userName, email, password) {
