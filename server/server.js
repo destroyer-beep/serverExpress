@@ -1,13 +1,12 @@
 const express = require('express');
 const fs = require('fs');
-const MongoClient = require('mongodb').MongoClient;
 const Validator = require('./validation');
+const Database = require('./database/Database');
 
-const url = 'mongodb://localhost:27017/';
-const mongoClient = new MongoClient(url);
-const validator = new Validator ();
 const app = express();
 app.use(express.json());
+const validator = new Validator ();
+const database = new Database()
 
 const dataValidation = async (req, res, next) => {
   try {
@@ -24,25 +23,15 @@ const dataValidation = async (req, res, next) => {
 
 app.post('/reg', dataValidation, async (req, res) => {
   try {
-    console.log(req.body);
-    await mongoClient.connect( async (err, client) => {
-      const db = await client.db('admin');
-      db.command({ping: 1}, function (err, res) {
-        if (!err) {
-          console.log("Подключение с сервером успешно установлено");
-        }
-      });
-      });
+    //console.log(req.body);
+    const {userName, email, password} = req.body;
+    database.userRegistration(userName, email, password);
     res.send('User saved!');
   } catch (error) {
     res.status(400).json({
       type: 'error',
       message: error.message
     });
-  }
-  finally {
-    await mongoClient.close();
-      console.log("Подключение закрыто");
   }
 });
 
