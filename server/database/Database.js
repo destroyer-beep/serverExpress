@@ -16,15 +16,15 @@ class Database {
                                         return console.log(err);
                                     }
                                     console.log('Пользователь добавлен');
+                                    client.close();
+                                    console.log('Подключение закрыто!');
                                 });
                             } else {
-                                return console.log('Имя уже существует!');
+                                console.log('Имя уже существует!');
+                                client.close();
+                                console.log('Подключение закрыто!');
                             }
-                        })
-                        // .then(item => {
-                        //     client.close();
-                        //     console.log('Подключение закрыто!')
-                        // });
+                        });
             });
         }catch(err) {
             throw err;

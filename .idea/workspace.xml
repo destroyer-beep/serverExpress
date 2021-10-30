@@ -13,7 +13,6 @@
     <list default="true" id="940b9f16-882c-4b1e-a36e-a378b1094ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/database/Database.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/Database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <workItem from="1634763180398" duration="3135000" />
       <workItem from="1634814717067" duration="1477000" />
       <workItem from="1635191347442" duration="1136000" />
-      <workItem from="1635633546953" duration="2989000" />
+      <workItem from="1635633546953" duration="3830000" />
     </task>
     <servers />
   </component>
