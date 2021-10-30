@@ -11,12 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="940b9f16-882c-4b1e-a36e-a378b1094ca8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/Database.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/Database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/database/Database.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,7 +49,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Database.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="server/database/Database.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="server/database/Database.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -70,6 +75,8 @@
       <workItem from="1634470957150" duration="1992000" />
       <workItem from="1634763180398" duration="3135000" />
       <workItem from="1634814717067" duration="1477000" />
+      <workItem from="1635191347442" duration="1136000" />
+      <workItem from="1635633546953" duration="2989000" />
     </task>
     <servers />
   </component>
@@ -89,14 +96,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="723" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635192165658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="723" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1635192165658" />
     <state x="720" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634828487282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1634828487282" />
-    <state x="461" y="154" key="SettingsEditor" timestamp="1634459225126">
+    <state x="1105" y="258" key="FileChooserDialogImpl" timestamp="1635192142022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="154" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1634459225126" />
+    <state x="1105" y="258" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1635192142022" />
+    <state width="1360" height="265" key="GridCell.Tab.0.bottom" timestamp="1635192498836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1360" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1635192498836" />
+    <state width="1360" height="265" key="GridCell.Tab.0.center" timestamp="1635192498835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1360" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1635192498835" />
+    <state width="1360" height="265" key="GridCell.Tab.0.left" timestamp="1635192498835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1360" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1635192498835" />
+    <state width="1360" height="265" key="GridCell.Tab.0.right" timestamp="1635192498835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1360" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1635192498835" />
+    <state x="750" y="306" width="1000" height="709" key="SettingsEditor" timestamp="1635191593307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="750" y="306" width="1000" height="709" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1635191593307" />
     <state x="617" y="237" key="run.anything.popup" timestamp="1634398850090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

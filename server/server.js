@@ -23,9 +23,8 @@ const dataValidation = async (req, res, next) => {
 
 app.post('/reg', dataValidation, async (req, res) => {
   try {
-    //console.log(req.body);
     const {userName, email, password} = req.body;
-    database.userRegistration(userName, email, password);
+    await database.userRegistration(userName, email, password);
     res.send('User saved!');
   } catch (error) {
     res.status(400).json({

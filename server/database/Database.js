@@ -5,27 +5,29 @@ class Database {
     async userRegistration(userName, email, password) {
         try {
             await MongoClient.connect(url, async (err, client) => {
-                const db = await client.db('database');
-                const collection = await db.collection('users');
-                const user = {userName, email, password};
-                const coincidenceName = await collection.findOne({userName});
-
-                if(coincidenceName.userName !== user.userName) {
-                    await collection.insertOne(user, (err, result) => {
-                    if(err){ 
-                        return console.log(err);
-                    }
-                });
-                } else {
-                    return console.log('Имя уже существует!');
-                }
-
+                    const db = await client.db('database');
+                    const collection = await db.collection('users');
+                    const user = {userName, email, password};
+                    await collection.findOne({userName})
+                        .then(item => {
+                            if(!item) {
+                                 collection.insertOne(user, (err, result) => {
+                                    if(err){
+                                        return console.log(err);
+                                    }
+                                    console.log('Пользователь добавлен');
+                                });
+                            } else {
+                                return console.log('Имя уже существует!');
+                            }
+                        })
+                        // .then(item => {
+                        //     client.close();
+                        //     console.log('Подключение закрыто!')
+                        // });
             });
-            console.log('Подключение создано')
         }catch(err) {
-            console.log(err);
-        } finally {
-            await MongoClient.close();
+            throw err;
         }
     }
 }
